@@ -1,19 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Ovaphone - An Ovatech Ltd Product</title>
-
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Bootstack - Bootstrap 3 Theme">
+		<meta name="keywords" content="">
+		<meta name="author" content="Daniely Wright">
 		<link href="assets/img/favicon.png" rel="shortcut icon" >
-		<title>Bootstack - Bootstrap 3 Theme</title>
+		<title>Ovaphone - A product by Ovatech Ltd </title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -34,140 +29,528 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script src="assets/js/modernizr.custom.js"></script>
+	</head>
 
-</head>
+	<body data-spy="scroll" data-offset="0" data-target=".navbar">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script',
-				'//www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-53085019-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-
-	<!-- Navigation -->
-	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-main-collapse">
-					<i class="fa fa-bars"></i>
-				</button>
-				<a class="navbar-brand page-scroll" href="#page-top"> <i
-					class="fa fa-play-circle"></i> <span class="light">Ovatech</span>
-					Ltd
-				</a>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div
-				class="collapse navbar-collapse navbar-right navbar-main-collapse">
-				<ul class="nav navbar-nav">
-					<!-- Hidden li included to remove active class from about_us link when scrolled up past about_us section -->
-					<li class="hidden"><a href="#page-top"></a></li>
-					<li><a class="page-scroll" href="#theovaphone">The
-							Ovaphone</a></li>
-					<li><a class="page-scroll" href="#howitworks">How it works</a>
-					</li>
-					<li><a class="page-scroll" href="#whatsinthebox">What's in
-							the box</a></li>
-					<li><a class="page-scroll" href="#buy_now">Buy now</a></li>
-					<li><a class="page-scroll" href="#about_us">About us</a></li>
-					<li><a class="page-scroll" href="#contact_us">Contact us</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container -->
-	</nav>
-
-	<!-- Intro Header -->
-	<header class="intro">
-		<div class="intro-body">
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<h1 class="brand-heading">Ovaphone</h1>
-						<p class="intro-text">
-							A simple, easy-to-use video-calling tablet.<br>Created by
-							Ovatech Ltd.
-						</p>
-						<a href="#about_us" class="btn btn-circle page-scroll"> <i
-							class="fa fa-angle-double-down animated"></i>
-						</a>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><licon class="li_data"></licon> <b>Ovaphone</b></a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav cl-effect-13">
+						<li class="active"><a href="#home" class="smoothScroll">How it works</a></li>
+						<li><a href="#box" class="smoothScroll">What's in the box</a></li>
+						<li><a href="#buynow" class="smoothScroll">Buy now</a></li>
+						<li><a href="#about" class="smoothScroll">About us</a></li>
+						<li><a href="#contact" class="smoothScroll">Contact us</a></li>
+					</ul>
+
+					<!-- Sign In / Sign Up -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown"><a href="#signin" data-toggle="modal" data-target=".bs-modal-sm"><i class="fa fa-lock"></i> Sign In</a></li>
+						<div class="navbar-form pull-left">
+							<a href="#signup" type="button" class="btn btn-sm btn-theme" data-toggle="modal" data-target=".bs-modal-sm">Free Trial</a>
+						</div>
+					</ul>
+				</div><!--/nav-collapse -->
+			</div><!-- /container -->
+		</div><!-- /fixed-navbar -->
+
+
+		<!-- Sign In / Sign Up Modal -->
+		<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<br>
+					<div class="bs-example bs-example-tabs">
+						<ul id="myTab" class="nav nav-tabs nav-justified">
+							<li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+							<li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<div id="myTabContent" class="tab-content">
+							<!-- Sign In Form -->
+							<div class="tab-pane fade active in" id="signin">
+								<form class="form-horizontal">
+									<fieldset>
+										<!-- Text input-->
+										<div class="control-group">
+											<label class="control-label" for="Email">Email:</label>
+											<div class="controls">
+												<input id="Email" name="Email" class="form-control" type="text" placeholder="Your email address" class="input-large" required="">
+											</div>
+										</div>
+
+										<!-- Password input-->
+										<div class="control-group">
+											<label class="control-label" for="passwordinput">Password:</label>
+											<div class="controls">
+												<input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+											</div>
+										</div>
+
+										<!-- Multiple Checkboxes (inline) -->
+										<div class="control-group">
+											<label class="control-label" for="rememberme"></label>
+											<div class="controls">
+												<label class="checkbox inline" for="rememberme-0">
+													<input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+													Remember me
+												</label>
+											</div>
+										</div>
+
+										<!-- Button -->
+										<div class="control-group">
+											<label class="control-label" for="signin"></label>
+											<div class="controls">
+												<button id="signin" name="signin" class="btn btn-theme btn-block">Sign In</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div><!-- /signin -->
+
+							<!-- Sign Up Form -->
+							<div class="tab-pane fade" id="signup">
+								<form class="form-horizontal">
+									<fieldset>
+										<!-- Text input-->
+										<div class="control-group">
+											<label class="control-label" for="Email">Email:</label>
+											<div class="controls">
+												<input id="Email" name="Email" class="form-control" type="text" placeholder="Your email address" class="input-large" required="">
+											</div>
+										</div>
+
+										<!-- Password input-->
+										<div class="control-group">
+											<label class="control-label" for="password">Password:</label>
+											<div class="controls">
+												<input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+												<em>1-8 Characters</em>
+											</div>
+										</div>
+
+										<!-- Text input-->
+										<div class="control-group">
+											<label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+											<div class="controls">
+												<input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+											</div>
+										</div>
+
+										<!-- Multiple Radios (inline) -->
+										<br>
+										<div class="control-group">
+											<label class="control-label" for="humancheck">Humanity Check:</label>
+											<div class="controls">
+												<label class="radio inline" for="humancheck-0">
+													<input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+												<label class="radio inline" for="humancheck-1">
+													<input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+											</div>
+										</div>
+
+										<!-- Button -->
+										<div class="control-group">
+											<label class="control-label" for="confirmsignup"></label>
+											<div class="controls">
+												<button id="confirmsignup" name="confirmsignup" class="btn btn-theme btn-block">Sign Up</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div><!-- /signup -->
+						</div><!-- /tab-content -->
+					</div><!-- /modal-body -->
+
+					<div class="modal-footer">
+						<center>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</center>
+					</div>
+				</div><!-- /modal-content -->
+			</div><!-- /modal-dialog -->
+		</div><!-- /modal -->
+
+
+		<!-- Header Wrap -->
+		<section id="home" name="home"></section>
+		<div class="headerwrap">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-12">
+						<h1>The <b>Ovaphone</b></h1>
+						<h3>An intuitive, easy-to-use video-calling tablet.</h3>
+						<br>
+					</div>
+
+					<div class="col-lg-2 hidden-xs hidden-sm hidden-md">
+						<h5>As easy as it gets!</h5>
+						<p>A simple touch of a contact's image starts the call.</p>
+						<img src="assets/img/arrow-left.png" alt="">
+					</div>
+					<div class="col-lg-8">
+						<img class="img-responsive" src="assets/img/app-bg.png" alt="">
+						<!--<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+						<a href="#box" type="submit" class="btn btn-lg btn-theme smoothScroll">LEARN MORE</a>-->
+					</div>
+					<div class="col-lg-2 hidden-xs hidden-sm hidden-md">
+						<br>
+						<img class="pad-top" src="assets/img/arrow-right.png" alt="">
+						<h5>Get grandma in on the action</h5>
+						<p>With a video call your loved ones closer and more connected to you and the rest of the family.</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</header>
+			</div> <!-- /container -->
+		</div><!-- /headerwrap -->
 
-	<!-- The Ovaphone Section Section -->
-	<section id="theovaphone" class="download-section container content-section text-center">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>The Ovaphone</h2>
-				<p>A simple to use video calling tablet created by Ovatech Ltd:</p>
-			</div>
-		</div>
-	</section>
 
-	<!-- How it works Section -->
-	<section id="howitworks" class="content-section text-center">
-		<div class="howitworks-section">
+		<!-- Intro Wrap -->
+		<div class="intro">
 			<div class="container">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h2>THe basics:</h2>
-					<p>Our software simplifies the usage of Skype</p>
-					<a href="http://startbootstrap.com/template-overviews/grayscale/"
-						class="btn btn-default btn-lg">Visit Download Page</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- What's in the box Section -->
-	<section id="whatsinthebox" class="content-section text-center">
-		<div class="whatsinthebox-section">
-			<div class="container">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h2>Included with the Ovaphone:</h2>
-					<p>Power cable</p>
-					<p>Stand</p>
-					<p>User guide</p>
-					<a href="http://startbootstrap.com/template-overviews/grayscale/"
-						class="btn btn-default btn-lg">Visit Download Page</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
-	<!-- Buy Now Section -->
-	<div style="text-align: center;">
-		<section id="buy_now" class="container content-section text-center">
-			<div style="text-align: center;">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
-						<h2>Buy Ovaphone</h2>
-						<p>This is an amazing product, buy it now! Here's why:</p>
+				<div class="row text-center">
+					<h2>4 simple steps</h2>
+					<hr>
+					<br>
+					<br>
+					<div class="col-lg-3">
+						<licon class="li_user"></licon>
+						<h3>Open</h3>
+						<p>Your 7" Ovaphone arrives ready to use complete with charger</p>
+					</div>
+					<div class="col-lg-3">
+						<licon class="li_banknote"></licon>
+						<h3>Connect</h3>
+						<p>Simply plug it in and connect to your Wi-Fi</p>
+					</div>
+					<div class="col-lg-3">
+						<licon class="li_data"></licon>
+						<h3>Add contacts</h3>
+						<p>Add your friends and family as contacts either on the device or remotely</p>
+					</div>
+					<div class="col-lg-3">
+						<licon class="li_like"></licon>
+						<h3>Call</h3>
+						<p>Start making video calls</p>
 					</div>
 				</div>
-		</section>
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+				<br>
+			</div> <!-- /container -->
+		</div><!-- /introwrap -->
+
+
+		<!-- box Wrap -->
+		<section id="box" name="box"></section>
+		<div class="boxwrap">
+			<div class="container">
+				<div class="row">
+					<h2 class="text-center">What's in the box?</h2>
+					<hr>
+					<br>
+					<br>
+					<div class="col-lg-6">
+						<img class="img-responsive left" src="assets/img/mobile.png" alt="">
+					</div>
+
+					<div class="col-lg-6">
+						<br>
+						<!-- Accordion -->
+						<div class="accordion ac" id="accordion2">
+							<div class="accordion-group active">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+									<i class="fa fa-cloud"></i> Collaborate in the cloud
+									</a>
+								</div><!-- /accordion-heading -->
+								<div id="collapseOne" class="accordion-body collapse in">
+									<div class="accordion-inner">
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+									</div><!-- /accordion-inner -->
+								</div><!-- /collapse -->
+							</div><!-- /accordion-group -->
+							<br>
+
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+									<i class="fa fa-mail-forward"></i> Get started fast
+									</a>
+								</div>
+								<div id="collapseTwo" class="accordion-body collapse">
+									<div class="accordion-inner">
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+									</div><!-- /accordion-inner -->
+								</div><!-- /collapse -->
+							</div><!-- /accordion-group -->
+							<br>
+
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+									<i class="fa fa-bar-chart-o"></i> Deliver real time insights
+									</a>
+								</div>
+								<div id="collapseThree" class="accordion-body collapse">
+									<div class="accordion-inner">
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+									</div><!-- /accordion-inner -->
+								</div><!-- /collapse -->
+							</div><!-- /accordion-group -->
+							<br>
+
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+									<i class="fa fa-dashboard"></i> Automate business processes
+									</a>
+								</div>
+								<div id="collapseFour" class="accordion-body collapse">
+									<div class="accordion-inner">
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+									</div><!-- /accordion-inner -->
+								</div><!-- /collapse -->
+							</div><!-- /accordion-group -->
+							<br>
+						</div><!-- /accordion -->
+					</div>
+				</div><!-- /row -->
+				<br><br><br>
+				<div class="row">
+					<h2 class="text-center">Multi Useful Components</h2>
+					<hr><br><br>
+					<div class="col-lg-6">
+						<br><br>
+						<h4><i class="fa fa-cogs"></i> Create customized business apps</h4>
+						<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<br><br>
+					</div>
+
+					<div class="col-lg-6">
+						<img class="img-responsive right" src="assets/img/tablet.png" alt="">
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+			</div><!-- /container -->
+		</div><!-- /boxwrap -->
+
+
+		<!-- Divider 1 Section -->
+		<div class="divider01">
+			<div class="container">
+				<div class="row text-center">
+					<div id="carousel-example-generic" class="carousel slide">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<h3>"Using my Ovaphone has helped me see my grandchildren as they grow up."</h3>
+								<h4>Maggie Jameson, <em>Grandma of 5</em></h4>
+							</div>
+							<div class="item">
+								<h3>"Getting my mom an Ovaphone has really brought us closer despite the distance between us."</h3>
+								<h4>Emma Andrews, <em>Loving daughter</em></h4>
+							</div>
+						</div><!-- /carousel-inner -->
+						<br>
+						<br>
+						<br>
+						<!-- Indicators - Uncomment for indicators to show
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						</ol> -->
+					</div><!-- /carousel-example -->
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /divider01 -->
+
+
+		<!-- Pricing Section -->
+		<section id="pricing" name="pricing"></section>
+		<div class="pricingwrap">
+			<div class="container text-center">
+				<br>
+				<h2>Our Pricing Options</h2>
+				<hr><br><br>
+				<div class="row">
+					<div class="col-xs-12 col-md-3">
+						<div class="panel panel-custom">
+							<div class="panel-heading">
+								<h3 class="panel-title">Starter</h3>
+							</div>
+							<div class="panel-body">
+								<div class="the-price">
+									<h2>$9<span class="subscript">/mo</span></h2>
+									<small>1 month FREE Trial</small>
+								</div>
+								<table class="table">
+									<tr>
+										<td>1 Account</td>
+									</tr>
+									<tr>
+										<td>1 Project</td>
+									</tr>
+									<tr>
+										<td>50K API Access</td>
+									</tr>
+									<tr>
+										<td>100MB Storage</td>
+									</tr>
+									<tr>
+										<td>Custom Cloud Services</td>
+									</tr>
+									<tr>
+										<td>Weekly Reports</td>
+									</tr>
+								</table>
+							</div>
+							<div class="panel-footer">
+								<a href="#" class="btn btn-theme" role="button">Sign Up</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="panel panel-custom">
+							<div class="panel-heading">
+								<h3 class="panel-title">Standard</h3>
+							</div>
+							<div class="panel-body">
+								<div class="the-price">
+									<h2>$19<span class="subscript">/mo</span></h2>
+									<small>1 month FREE Trial</small>
+								</div>
+								<table class="table">
+									<tr>
+										<td>2 Accounts</td>
+									</tr>
+									<tr>
+										<td>5 Projects</td>
+									</tr>
+									<tr>
+										<td>100K API Access</td>
+									</tr>
+									<tr>
+										<td>200MB Storage</td>
+									</tr>
+									<tr>
+										<td>Custom Cloud Services</td>
+									</tr>
+									<tr>
+										<td>Weekly Reports</td>
+									</tr>
+								</table>
+							</div>
+							<div class="panel-footer">
+								<a href="#" class="btn btn-theme" role="button">Sign Up</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="panel panel-custom">
+							<div class="panel-heading">
+								<h3 class="panel-title">Premium</h3>
+							</div>
+							<div class="panel-body">
+							<div class="the-price">
+								<h2>$39<span class="subscript">/mo</span></h2>
+								<small>1 month FREE Trial</small>
+							</div>
+							<table class="table">
+								<tr>
+									<td>5 Accounts</td>
+								</tr>
+								<tr>
+									<td>20 Projects</td>
+								</tr>
+								<tr>
+									<td>300K API Access</td>
+								</tr>
+								<tr>
+									<td>500MB Storage</td>
+								</tr>
+								<tr>
+									<td>Custom Cloud Services</td>
+								</tr>
+								<tr>
+									<td>Weekly Reports</td>
+								</tr>
+							</table>
+							</div>
+							<div class="panel-footer">
+								<a href="#" class="btn btn-theme" role="button">Sign Up</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="panel panel-custom">
+							<div class="panel-heading">
+								<h3 class="panel-title">Enterprise</h3>
+							</div>
+							<div class="panel-body">
+								<div class="the-price">
+									<h2>$59<span class="subscript">/mo</span></h2>
+									<small>1 month FREE Trial</small>
+								</div>
+								<table class="table">
+									<tr>
+										<td>10 Accounts</td>
+									</tr>
+									<tr>
+										<td>50 Projects</td>
+									</tr>
+									<tr>
+										<td>500K API Access</td>
+									</tr>
+									<tr>
+										<td>1GB Storage</td>
+									</tr>
+									<tr>
+										<td>Custom Cloud Services</td>
+									</tr>
+									<tr>
+										<td>Weekly Reports</td>
+									</tr>
+								</table>
+							</div>
+							<div class="panel-footer">
+								<a href="#" class="btn btn-theme" role="button">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /pricingwrap -->
+		
+		<!-- Buy Now Section -->
+		<div style="text-align: center;">
+<section id="buynow" name="buynow"></section>
+<h1><center>As easy as 1, 2, 3! </center></h1>
+<p></p>
+					<p></p>
+<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+<p></p>
+					<p></p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
 			target="_top">
 			<input type="hidden" name="cmd" value="_xclick"> <input
 				type="hidden" name="business" value="info@ovaphone.co.uk"> <input
@@ -186,46 +569,88 @@
 				src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
 				height="1">
 		</form>
-	</div>
-
-	<!-- about_us Section -->
-	<section id="about_us" class="container content-section text-center">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>About us Ovatech Ltd</h2>
-				<p>
-					Grayscale is a free Bootstrap 3 theme created by Start Bootstrap.
-					It can be yours right now, simply download the template on <a
-						href="http://startbootstrap.com/template-overviews/grayscale/">the
-						preview page</a>. The theme is open source, and you can use it for any
-					purpose, personal or commercial.
-				</p>
-				<p>
-					This theme features stock photos by <a
-						href="http://gratisography.com/">Gratisography</a> along with a
-					custom Google s skin courtesy of <a href="http://snazzys.com/">Snazzy
-						s</a>.
-				</p>
-				<p>Grayscale includes full HTML, CSS, and custom JavaScript
-					files along with LESS files for easy customization.</p>
+		<p></p>
+					<p></p>
+<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+<p></p>
+					<p></p>
+		
+		
+<!-- Buy Now Section wrap -->
+		
+		<!-- Divider 2 Section -->
+		<div class="divider02">
+			<div class="container text-center">
+				<h3>Start your 30-day free trial today.</h3>
+				<a href="#" type="button" class="btn btn-lg btn-theme2">Get Started</a>
 			</div>
-		</div>
-	</section>
+		</div><!-- /divider02 -->
 
-	<!-- contact_us Section -->
-	<section id="contact_us" class="container content-section text-center">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Contact Us Start Bootstrap</h2>
-				<p>Feel free to email us to provide some feedback on our
-					templates, give us suggestions for new templates and themes, or to
-					just say hello!</p>
-				<p>
-					<a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-				</p>
-				<p></p>
+<!-- About Section -->
+<section id="about" name="about"></section>
+<h1><center>We are a caring team</center></h1>
+<p><center>We genuinely care about your concerns, a reason why we developed Ovaphone in the first place</center></p>
+<!-- About Section wrap-->
 
-				<!-- Begin MailChimp Signup Form -->
+
+		<!-- Footer Wrap -->
+		<section id="contact" name="contact"></section>
+		<div class="footerwrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<h3>Contact Us</h3>
+						<br>
+						<p><i class="fa fa-map-marker"></i> 3, Charles Babbage Road, Cambridge, Cambridgeshire, CB3 0GT <br/>
+							<i class="fa fa-phone"></i> (08)70 392 1517 <br/>
+							<i class="fa fa-envelope-o"></i> <a href="mailto:info@ovaphone.co.uk">info@ovaphone.co.uk</a>
+						</p>
+					</div>
+
+					<div class="col-lg-4">
+						<h3>We Are Social</h3>
+						<br>
+						<div id="social">
+							<a href="#" rel="tooltip" title="Facebook" class="facebook">Facebook</a>
+							<a href="#" rel="tooltip" title="Twitter" class="twitter">Twitter</a>
+							<a href="#" rel="tooltip" title="RSS" class="rss">RSS</a>
+							<a href="#" rel="tooltip" title="Github" class="github">Github</a>
+							<a href="#" rel="tooltip" title="LinkedIn" class="linkedin">LinkedIn</a>
+							<a href="#" rel="tooltip" title="Pintrest" class="pintrest">Pintrest</a>
+							<a href="#" rel="tooltip" title="Vimeo" class="vimeo">Vimeo</a>
+							<a href="#" rel="tooltip" title="YouTube" class="youtube">YouTube</a>
+						</div>
+					</div>
+					
+						<script type="text/javascript">
+						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+						var disqus_shortname = 'ovatech'; // required: replace example with your forum shortname
+
+						/* * * DON'T EDIT BELOW THIS LINE * * */
+						(function() {
+							var dsq = document.createElement('script');
+							dsq.type = 'text/javascript';
+							dsq.async = true;
+							dsq.src = '//' + disqus_shortname
+									+ '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document
+									.getElementsByTagName('body')[0])
+									.appendChild(dsq);
+						})();
+					</script>
+					<noscript>
+						Please enable JavaScript to view the <a
+							href="http://disqus.com/?ref_noscript">comments powered by
+							Disqus.</a>
+					</noscript>
+					<a href="http://disqus.com" class="dsq-brlink">comments powered
+						by <span class="logo-disqus">Disqus</span>
+					</a>
+
+					<!-- Begin MailChimp Signup Form -->
 				<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css"
 					rel="stylesheet" type="text/css">
 				<style type="text/css">
@@ -260,86 +685,50 @@
 
 				<!--End mc_embed_signup-->
 
-				<p></p>
-				<p></p>
 
-				<ul class="list-inline banner-social-buttons">
-					<li><a href="https://twitter.com/SBootstrap"
-						class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i>
-							<span class="network-name">Twitter</span></a></li>
-					<li><a
-						href="https://github.com/IronSummitMedia/startbootstrap"
-						class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
-							<span class="network-name">Github</span></a></li>
-					<li><a href="https://plus.google.com/+Startbootstrap/posts"
-						class="btn btn-default btn-lg"><i
-							class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-					</li>
-					<div id="disqus_thread"></div>
 
 					<p></p>
 					<p></p>
 
-					<script type="text/javascript">
-						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-						var disqus_shortname = 'ovatech'; // required: replace example with your forum shortname
-
-						/* * * DON'T EDIT BELOW THIS LINE * * */
-						(function() {
-							var dsq = document.createElement('script');
-							dsq.type = 'text/javascript';
-							dsq.async = true;
-							dsq.src = '//' + disqus_shortname
-									+ '.disqus.com/embed.js';
-							(document.getElementsByTagName('head')[0] || document
-									.getElementsByTagName('body')[0])
-									.appendChild(dsq);
-						})();
-					</script>
-					<noscript>
-						Please enable JavaScript to view the <a
-							href="http://disqus.com/?ref_noscript">comments powered by
-							Disqus.</a>
-					</noscript>
-					<a href="http://disqus.com" class="dsq-brlink">comments powered
-						by <span class="logo-disqus">Disqus</span>
-					</a>
+				
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /footerwrap -->
 
 
-				</ul>
-			</div>
-		</div>
-	</section>
+		<!-- Copyright Wrap -->
+		<div class="copywrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10">
+						<p>Copyright &copy;2014 Bootstack Theme. All Rights Reserved.</p>
+					</div>
+					<div class="col-lg-2">
+						<p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Legal</a></p>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /copywrap (copyright) -->
 
 
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<script src="assets/js/detectmobilebrowser.js"></script>
+		<script src="assets/js/jquery.inview.min.js"></script>
+		<script src="assets/js/smoothscroll.js"></script>
+		<script src="assets/js/animations.js"></script>
+		<script>
+			$('.carousel').carousel({
+				interval: 3500,
+				pause: "none"
+			})
 
-	<!--  Section -->
-	<div id=""></div>
-
-	<!-- Footer -->
-	<footer>
-		<div class="container text-center">
-			<p>Copyright &copy; Your Website 2014</p>
-		</div>
-	</footer>
-
-	<!-- jQuery Version 1.11.0 -->
-	<script src="js/jquery-1.11.0.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- Plugin JavaScript -->
-	<script src="js/jquery.easing.min.js"></script>
-
-	<!-- Google s API Key - Use your own API key to enable the  feature. More information on the Google s API can be found at https://developers.google.com/s/ -->
-	<script type="text/javascript"
-		src="https://s.googleapis.com/s/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-	<!-- Custom Theme JavaScript -->
-	<script src="js/grayscale.js"></script>
-
-</body>
-
+			$('.nav li a').on('click',function(){
+				$('.navbar-collapse').collapse('hide');
+			})
+		</script>
+	</body>
 </html>
-
