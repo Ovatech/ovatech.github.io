@@ -43,7 +43,7 @@ p {
 /* Links */
 
 a {
-	color: #06979e;
+	color: #229BDE;
 	word-wrap: break-word;
 
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -55,7 +55,7 @@ a {
 
 a:hover,
 a:focus {
-	color: #05888e;
+	color: #1462C3;
 	text-decoration: none;
 	outline: 0;
 }
@@ -80,16 +80,16 @@ a:after {
 /* Button Modifications */
 
 .btn-theme {
-	background-color: #06979e;
+	background-color: #229BDE;
 	color: #fff;
-	border-color: #06979e;
+	border-color: #229BDE;
 }
 
 .btn-theme:hover,
 .btn-theme:focus {
-	border-color: #06979e; /* change to darker hue than bg hover color */
+	border-color: #229BDE; /* change to darker hue than bg hover color */
 	background-color: transparent;
-	color: #06979e;
+	color: #229BDE;
 	box-shadow: none;
 }
 
@@ -103,7 +103,7 @@ a:after {
 .btn-theme2:active {
 	border-color: #fff;
 	background-color: #fff;
-	color: #06979e;
+	color: #229BDE;
 	box-shadow: none;
 }
 
@@ -136,11 +136,11 @@ a:after {
 }
 
 .navbar-default .navbar-toggle > .icon-bar {
-	background-color: #06979e;
+	background-color: #229BDE;
 }
 
 .navbar-default .navbar-brand {
-	color: #06979e;
+	color: #229BDE;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -148,7 +148,7 @@ a:after {
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #06979e;
+	color: #229BDE;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -172,7 +172,7 @@ a:after {
 .navbar-default .navbar-right a[type="button"]:hover,
 .navbar-default .navbar-right a[type="button"]:focus {
 	background-color: transparent;
-	color: #06979e;
+	color: #229BDE;
 }
 
 
@@ -210,14 +210,14 @@ a:after {
 }
 
 .headerwrap h5 {
-	color: white;
+	color: #1973b5;
 	font-weight: 700;
 	text-align: left;
 }
 
 .headerwrap p {
 	text-align: left;
-	color: #fff;
+	color: #0a4cc8;
 }
 
 
@@ -230,7 +230,7 @@ a:after {
 
 .intro licon {
 	font-size: 60px;
-	color: #06979e;
+	color: #229BDE;
 	padding: 20px;
 	vertical-align: middle;
 }
@@ -255,7 +255,7 @@ a:after {
 .featureswrap .col-lg-6 h4,
 .featureswrap .col-lg-6 licon {
 	font-size: 20px;
-	color: #06979e;
+	color: #229BDE;
 }
 
 /* Divider 1 & 2 Wrap */
@@ -278,7 +278,7 @@ a:after {
 }
 
 .divider02 {
-	background-color: #06979e;
+	background-color: #229BDE;
 	height: 150px;
 	padding-top: 55px;
 }
@@ -314,11 +314,11 @@ a:after {
 }
 
 .panel-custom {
-	border-color: #06979e;
+	border-color: #229BDE;
 }
 
 .panel-custom > .panel-heading {
-	background-color: #06979e;
+	background-color: #229BDE;
 	color: #fff;
 }
 
